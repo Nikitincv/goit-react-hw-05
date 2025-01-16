@@ -12,7 +12,7 @@ const SearchBar = ({ onSubmit }) => {
     e.target.reset();
   };
   return (
-    <header className={s.header}>
+    <div className={s.header}>
       <form className={s.headerForm} onSubmit={handelSubmit}>
         <button className={s.headerSubmitBtn} type="submit">
           <CiSearch />
@@ -26,7 +26,7 @@ const SearchBar = ({ onSubmit }) => {
           placeholder="Search images and photos"
         />
       </form>
-    </header>
+    </div>
   );
 };
 

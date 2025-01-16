@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { getMovieReviews } from "../../sevice/api";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import { TfiLayoutLineSolid } from "react-icons/tfi";
+import s from "./MovieReviews.module.css";
 
 const MovieReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -26,14 +28,16 @@ const MovieReviews = () => {
   }, [movieId]);
   return (
     <div>
-      <ul>
+      <ul className={s.revBox}>
         {reviews.map((item) => (
           <li key={item.id}>
             <h3>{item.author}</h3>
             <p>{item.content}</p>
+            <TfiLayoutLineSolid className={s.revLine} />
           </li>
         ))}
       </ul>
+
       {isLoading && <Loader />}
       {isError && <ErrorMessage error={isError} />}
     </div>

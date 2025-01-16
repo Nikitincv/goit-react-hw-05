@@ -1,4 +1,4 @@
-header {
+.header {
   width: 100%;
   height: 70px;
   background-color: blue;
@@ -20,7 +20,6 @@ header {
 
 .headerSubmitBtn {
   position: relative;
-  top: 1px;
   height: 50px;
   border: none;
   background-color: #fff;

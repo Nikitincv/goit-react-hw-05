@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTrendingMovie } from "../sevice/api";
-import MovieList from "../components/MovieList";
+import MovieList from "../components/MovieList/MovieList";
 import Loader from "../components/Loader/Loader";
 import ErrorMessage from "../components/ErrorMessage/ErrorMessage";
 

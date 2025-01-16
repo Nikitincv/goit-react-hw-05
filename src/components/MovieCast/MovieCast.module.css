@@ -1,0 +1,12 @@
+.castBox {
+  margin-left: 25px;
+}
+.itemImg {
+  width: 100px;
+  height: 140px;
+  margin-bottom: 5px;
+}
+
+.itemImg:first-child {
+  margin-top: 20px;
+}

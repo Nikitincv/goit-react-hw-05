@@ -1,0 +1,28 @@
+header {
+  padding: 10px 20px;
+  /* width: 100%; */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.navBox {
+  display: flex;
+  gap: 20px;
+}
+.home {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.5s ease;
+}
+.home:hover {
+  color: blue;
+}
+
+.movies {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.5s ease;
+}
+.movies:hover {
+  color: blue;
+}

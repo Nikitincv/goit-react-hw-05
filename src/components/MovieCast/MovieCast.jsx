@@ -3,9 +3,10 @@ import { getMovieCredits } from "../../sevice/api";
 import { useParams } from "react-router-dom";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
+import s from "./MovieCast.module.css";
 
 const defaultImg =
-  "https://dl-media.viber.com/10/share/2/long/vibes/icon/image/0x0/95e0/5688fdffb84ff8bed4240bcf3ec5ac81ce591d9fa9558a3a968c630eaba195e0.jpg";
+  "https://www.hollywoodmegastore.com/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/3/4/3445d_small_trophy_personalized_lrg.jpg";
 const MovieCast = () => {
   const [cast, setCast] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -26,12 +27,14 @@ const MovieCast = () => {
     };
     fetchMovies();
   }, [movieId]);
+
   return (
-    <div>
+    <div className={s.castBox}>
       <ul>
         {cast.map((item) => (
           <li key={item.id}>
             <img
+              className={s.itemImg}
               src={
                 item.profile_path
                   ? `https://image.tmdb.org/t/p/w500/${item.profile_path}`
@@ -39,7 +42,7 @@ const MovieCast = () => {
               }
               alt={item.name}
             />
-            <p>{item.name}</p>
+            <p className={s.itemName}>{item.name}</p>
           </li>
         ))}
       </ul>

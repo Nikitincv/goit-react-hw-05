@@ -1,0 +1,12 @@
+.revBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.revBox:first-child {
+  margin-top: 20px;
+}
+
+.revLine {
+  width: 100%;
+}

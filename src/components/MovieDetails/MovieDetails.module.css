@@ -1,0 +1,55 @@
+.parent {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.posterImg {
+  height: 400px;
+  width: 250px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.goBack {
+  text-decoration: none;
+  color: black;
+  border-color: aliceblue;
+  border-radius: 4px;
+  padding: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.goBack:hover {
+  color: blue;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.infoLinkBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-top: 1px solid;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+.castLink,
+.reviewLink {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s ease;
+  width: 50px;
+}
+.castLink:hover,
+.reviewLink:hover {
+  color: blue;
+}
