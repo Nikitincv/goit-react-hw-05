@@ -2,6 +2,7 @@ import s from "./MovieDetails.module.css";
 
 const MovieDetails = ({ movie }) => {
   const year = movie.release_date.split("-")[0];
+
   return (
     <div className={s.parent}>
       <img
